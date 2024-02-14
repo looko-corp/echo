@@ -2,10 +2,13 @@ package middleware
 
 import (
 	"context"
-	"github.com/labstack/echo/v4"
+	"fmt"
 	"net/http"
+	"runtime/debug"
 	"sync"
 	"time"
+
+	"github.com/looko-corp/echo/v4"
 )
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -156,6 +159,7 @@ func (t echoHandlerFuncWrapper) ServeHTTP(rw http.ResponseWriter, r *http.Reques
 	// so it could be handled with global middleware Recover()
 	defer func() {
 		if err := recover(); err != nil {
+			fmt.Println(string(debug.Stack()))
 			t.ctx.Response().Writer = originalWriter
 			panic(err)
 		}
