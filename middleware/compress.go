@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/labstack/echo/v4"
+	"github.com/looko-corp/echo/v4"
 )
 
 type (

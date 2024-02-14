@@ -5,8 +5,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/labstack/echo/v4"
 	"github.com/labstack/gommon/bytes"
+	"github.com/looko-corp/echo/v4"
 )
 
 type (
