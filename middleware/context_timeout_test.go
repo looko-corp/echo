@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/labstack/echo/v4"
+	"github.com/looko-corp/echo/v4"
 	"github.com/stretchr/testify/assert"
 )
 

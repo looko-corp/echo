@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/labstack/echo/v4"
 	"github.com/labstack/gommon/random"
+	"github.com/looko-corp/echo/v4"
 )
 
 type (
